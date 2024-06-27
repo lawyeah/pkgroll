@@ -1,6 +1,6 @@
 {
-	"name": "pkgroll",
-	"version": "0.0.0-semantic-release",
+	"name": "@lawyeah/pkgroll",
+	"version": "1.0.0",
 	"description": "Zero-config rollup bundler",
 	"keywords": [
 		"zero config",
@@ -29,10 +29,10 @@
 	},
 	"scripts": {
 		"build": "tsx src/cli.ts --minify --target node18",
-		"test": "pnpm build && tsx tests/index.ts",
+		"test": "npm run build && tsx tests/index.ts",
 		"lint": "lintroll --cache --node --ignore-pattern tests/fixture-package .",
 		"type-check": "tsc --noEmit",
-		"prepack": "pnpm build && clean-pkg-json"
+		"prepack": "bash fork.npm.sh"
 	},
 	"engines": {
 		"node": ">=18"

@@ -156,7 +156,7 @@ export const getRollupConfigs = async (
 	);
 
 	const externalDependencies = getExternalDependencies(packageJson, aliases);
-	const externalTypeDependencies = getExternalDependencies(packageJson, aliases, true);
+	const externalTypeDependencies = getExternalDependencies(packageJson, aliases, false);
 
 	for (const {
 		input, srcExtension, distExtension, exportEntry,
