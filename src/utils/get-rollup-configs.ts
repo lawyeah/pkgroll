@@ -177,6 +177,8 @@ export const getRollupConfigs = async (
 			config.output.push({
 				dir: distributionDirectoryPath,
 
+                interop: 'auto',
+
 				/**
 				 * Preserve source path in dist path
 				 * realpath used for few reasons:
@@ -219,6 +221,7 @@ export const getRollupConfigs = async (
 		if (!outputs[key]) {
 			const outputOptions: OutputOptions = {
 				dir: distributionDirectoryPath,
+                interop: 'auto',
 				exports: 'auto',
 				format: exportEntry.type,
 				chunkFileNames: `[name]-[hash]${extension}`,
