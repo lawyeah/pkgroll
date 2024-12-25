@@ -5,6 +5,7 @@ npm run build
 mkdir -p npmpkg
 rm -rf npmpkg/*
 mv dist npmpkg
+cp README.md npmpkg
 cp package.json package.save
 npx clean-pkg-json
 mv package.json npmpkg

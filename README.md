@@ -1,6 +1,3 @@
-<p align="center">
-	<img width="130" src=".github/logo.webp">
-</p>
 <h1 align="center">
 	<sup>pkgroll</sup>
 	<br>
@@ -29,7 +26,7 @@ Write your code in TypeScript/ESM and run `pkgroll` to get ESM/CommonJS/.d.ts ou
 
 ## Install
 ```sh
-npm install --save-dev pkgroll
+npm install --save-dev @lawyeah/pkgroll
 ```
 
 ## Quick setup
